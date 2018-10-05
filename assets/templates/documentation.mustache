@@ -1,0 +1,76 @@
+<div class="tab-content">
+<h1 class="sr-only">Introduction</h1>
+<div class="tab-pane active" id="about" role="tabpanel">
+	<h2><?php _e('About', 'bootstrap-4-shortcodes'); ?></h2>
+	<p>
+	<?php _e('WordPress plugin that provides shortcodes for easier use of the Bootstrap 4 styles and components in your content.', 'bootstrap-4-shortcodes'); ?>
+	</p>
+</div>
+
+{{#sections}}
+<h1 class="sr-only"><?php _e('{{title}}', 'bootstrap-4-shortcodes'); ?></h1>
+{{#items}}
+<div class="tab-pane" id="{{id}}" role="tabpanel">
+<h2><?php _e('{{title}}', 'bootstrap-4-shortcodes'); ?></h2>
+{{#note}}<p><?php _e('{{{note}}}', 'bootstrap-4-shortcodes'); ?></p>{{/note}}
+{{#examples}}
+	<div class="card">
+		<div class="card-body">
+      <h5 class="card-title">
+        <?php _e('{{description}}', 'bootstrap-4-shortcodes'); ?>
+      </h5>
+      <p class="card-text">{{{note}}}</p>
+			<pre><code class="d-block p-4">{{code}}</code></pre>
+		</div>
+		<div class="card-footer text-left">
+			<button data-path="placeholder" data-dismiss="modal" class="btn btn-primary btn-sm float-xs-right insert-code"><?php _e('Insert Example', 'bootstrap-4-shortcodes'); ?></button>
+		</div>
+	</div> <!--/card -->
+{{/examples}}
+
+{{#shortcodes}}
+<h3 class="mt-5">[{{name}}] <?php _e('parameters', 'bootstrap-4-shortcodes'); ?></h3>
+{{#note}}
+<div class="alert alert-warning"><strong><?php _e('Note:', 'bootstrap-4-shortcodes'); ?></strong> <?php _e('{{{note}}}', 'bootstrap-4-shortcodes'); ?></div>
+{{/note}}
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th><?php _e('Parameter', 'bootstrap-4-shortcodes'); ?></th>
+			<th><?php _e('Description', 'bootstrap-4-shortcodes'); ?></th>
+			<th><?php _e('Required', 'bootstrap-4-shortcodes'); ?></th>
+			<th><?php _e('Values', 'bootstrap-4-shortcodes'); ?></th>
+			<th><?php _e('Default', 'bootstrap-4-shortcodes'); ?></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#parameters}}
+		<tr>
+			<td>{{name}}</td>
+			<td><?php _e('{{description}}', 'bootstrap-4-shortcodes'); ?></td>
+			<td>{{required}}</td>
+			<td>{{values}}</td>
+			<td>{{default}}</td>
+		</tr>
+		{{/parameters}}
+		<tr>
+			<td>class</td>
+			<td><?php _e('Any extra classes you want to add.', 'bootstrap-4-shortcodes'); ?></td>
+			<td><?php _e('optional', 'bootstrap-4-shortcodes'); ?></td>
+			<td><?php _e('any text', 'bootstrap-4-shortcodes'); ?></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td><?php _e('Data attribute and value pairs separated by a comma. Pairs separated by pipe.', 'bootstrap-4-shortcodes'); ?></td>
+			<td><?php _e('optional', 'bootstrap-4-shortcodes'); ?></td>
+			<td><?php _e('any text', 'bootstrap-4-shortcodes'); ?></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+{{/shortcodes}}
+</div>
+{{/items}}
+{{/sections}}
+</div>

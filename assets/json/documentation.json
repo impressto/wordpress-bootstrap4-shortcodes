@@ -1,0 +1,1239 @@
+{
+	"sections": [
+		{
+			"title": "Layout",
+			"items": [
+				{
+				  "title": "Grid",
+					"id": "grid",
+				  "examples": [
+							{
+								"note": "",
+								"description": "Basic example",
+								"code": "[row]\n  [column sm=\"6\"] ... [/column]\n  [column sm=\"6\"] ... [/column]\n[/row]"
+							},
+							{
+								"note": "The container component is also supported in case your theme doesn&apos;t include a container.",
+								"description": "Basic example with container",
+								"code": "[container]\n  [row]\n    [column xs=\"6\"] ... [/column]\n    [column xs=\"6\"] ... [/column]\n  [/row]\n[/container]"
+							},
+							{
+								"note": "The container-fluid component is supported as a discrete shortcode.",
+								"description": "Basic example with fluid container",
+								"code": "[container-fluid]  \n[row]\n    [column xs=\"6\"] ... [/column]\n    [column xs=\"6\"] ... [/column]\n  [/row]\n[/container-fluid]"
+							}
+					],
+					"shortcodes": [
+						{
+							"name": "container",
+							"parameters": ""
+						},
+						{
+							"name": "row",
+							"parameters": ""
+						},
+						{
+							"name": "column",
+							"parameters": [
+								{
+									"name": "xs",
+									"description": "Size of column on extra small screens.",
+									"required": "0",
+									"values": "1-12, flex",
+									"default": ""
+								},
+								{
+									"name": "sm",
+									"description": "Size of column on small screens.",
+									"required": "0",
+									"values": "1-12, flex",
+									"default": ""
+								},
+								{
+									"name": "md",
+									"description": "Size of column on medium screens.",
+									"required": "0",
+									"values": "1-12, flex",
+									"default": ""
+								},
+								{
+									"name": "lg",
+									"description": "Size of column on large screens.",
+									"required": "0",
+									"values": "1-12, flex",
+									"default": ""
+								},
+								{
+									"name": "xl",
+									"description": "Size of column on extra large screens.",
+									"required": "0",
+									"values": "1-12, flex",
+									"default": ""
+								},
+								{
+									"name": "offset_xs",
+									"description": "Offset on extra small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "offset_sm",
+									"description": "Offset on small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "offset_md",
+									"description": "Offset on medium screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "offset_lg",
+									"description": "Offset on large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "offset_xl",
+									"description": "Offset on extra large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "pull_xs",
+									"description": "Pull on extra small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "pull_sm",
+									"description": "Pull on small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "pull_md",
+									"description": "Pull on medium screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "pull_lg",
+									"description": "Pull on large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "pull_xl",
+									"description": "Pull on extra large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "push_xs",
+									"description": "Push on extra small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "push_sm",
+									"description": "Push on small screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "push_md",
+									"description": "Push on medium screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "push_lg",
+									"description": "Push on large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								},
+								{
+									"name": "push_xl",
+									"description": "Push on extra large screens.",
+									"required": "0",
+									"values": "0-12",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Media Object",
+					"id": "media-object",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[media]\n  [media-object]\n    <img src=\"placeholder-path/placeholder.png\">\n  [/media-object]\n  [media-body]\n    [media-heading] <h4>Media Heading</h4> [/media-heading]\n    ...\n  [/media-body]\n[/media]"
+						},
+						{
+							"note": "Wrap several <code>[media-object]</code>s in <code>[media-list]</code>, useful for comment threads or articles lists.",
+							"description": "Media List",
+							"code": "[media-list]\n  [media]\n    [media-object]\n      <img src=\"placeholder-path/placeholder.png\">\n    [/media-object]\n    [media-body]\n      [media-heading] <h4>Media Heading</h4> [/media-heading]\n      ...\n    [/media-body]\n  [/media]\n  [media]\n    [media-object]\n      <img src=\"placeholder-path/placeholder.png\">\n    [/media-object]\n    [media-body]\n      [media-heading] <h4>Media Heading</h4> [/media-heading]\n      ...\n    [/media-body]\n  [/media]\n[/media-list]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "media",
+							"parameters": ""
+						},
+						{
+							"name": "media-object",
+							"parameters": [
+								{
+									"name": "media",
+									"description": "Whether the image pulls to the left or right.",
+									"required": "0",
+									"values": "left, right",
+									"default": "left"
+								}
+							]
+						},
+						{
+							"name": "media-body",
+							"parameters": ""
+						},
+						{
+							"name": "media-heading",
+							"note": "<code>[media-heading]</code> should contain heading tag (<code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, or <code>h6</code>), inserted using the WordPress editor. If a header tag is not added <code>h4</code> will be inserted automatically.",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Responsive Utilities",
+					"id": "responsive-utilities",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[hidden down=\"sm\"] ... [/hidden]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "hidden",
+							"parameters": [
+								{
+									"name": "up",
+									"description": "Hide the contents on this screen size and above.",
+									"required": "0",
+									"values": "xs, sm, md, lg, xl",
+									"default": ""
+								},
+								{
+									"name": "down",
+									"description": "Hide the contents on this screen size and below.",
+									"required": "0",
+									"values": "xs, sm, md, lg, xl",
+									"default": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Components",
+			"items": [
+				{
+					"title": "Alerts",
+					"id": "alerts",
+					"note": "Any links, headings, or strong or bold text within an alert will automatically be styled to match the alert type.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[alert type=\"primary\"] ... [/alert]"
+            },
+						{
+							"note": "",
+							"description": "Dismissible",
+							"code": "[alert type=\"primary\" dismissible] ... [/alert]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "alert",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the alert.",
+									"required": "0",
+									"values": "primary, secondary, success, info, warning, danger, light, dark",
+									"default": "primary"
+								},
+								{
+									"name": "dismissible",
+									"description": "If the alert should be dismissable.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+        },
+				{
+					"title": "Badge",
+					"id": "badge",
+					"note": "",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[badge type=\"primary\"] Lorem [/badge]"
+            },
+						{
+							"note": "",
+							"description": "Pill badges",
+							"code": "[badge type=\"primary\" pill] Ipsum [/badge]"
+            },
+						{
+							"note": "",
+							"description": "Links",
+							"code": "[badge type=\"primary\"] <a href=\"#link\">Dolor Sit</a> [/badge]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "badge",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the badge.",
+									"required": "0",
+									"values": "primary, secondary, success, info, warning, danger, light, dark",
+									"default": "primary"
+								},
+								{
+									"name": "pill",
+									"description": "If the badge should be styled as a pill.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Breadcrumb",
+					"id": "breadcrumb",
+					"note": "",
+					"examples": [
+						{
+							"note": "Remember that <code>[breadcrumb]</code> must wrap a set of links inserted via the WordPress editor.",
+							"description": "Basic example",
+							"code": "[breadcrumb]\n  <a href=\"#link1\"> Link 1 </a>\n  <a href=\"#link2\"> Link 2 </a>\n  [active] Link 3 [/active]\n[/breadcrumb]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "breadcrumb",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Buttons",
+					"id": "buttons",
+					"note": "Wrap any <code>a</code>, <code>button</code>, or <code>input</code> tag inserted via the WordPress editor in <code>[button]</code> to give it button properties and classes.",
+					"examples": [
+						{
+							"description": "Basic example",
+							"code": "[button type=\"primary\"] <a href=\"#link\">Button Text</a> [/button]"
+						},
+						{
+							"note": "Set button sizes with the <code>size</code> parameter.",
+							"description": "Large button",
+							"code": "[button type=\"primary\" size=\"lg\"] <a href=\"#link\">Button Text</a> [/button]"
+						},
+						{
+							"note": "Set <code>block</code> flag for block-style buttons.",
+							"description": "Button-block example",
+							"code": "[button type=\"primary\" block] <a href=\"#link\">Button Text</a> [/button]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "button",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the button.",
+									"required": "0",
+									"values": "primary, secondary, success, info, warning, danger, light, dark, link, outline-primary, outline-secondary, outline-success, outline-info, outline-warning, outline-danger, outline-light, outline-dark",
+									"default": "primary"
+								},
+								{
+									"name": "size",
+									"description": "The size of the button.",
+									"required": "0",
+									"values": "sm, lg",
+									"default": ""
+								},
+								{
+									"name": "block",
+									"description": "Flag whether the button should be a block-level button.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+                },
+								{
+									"name": "active",
+									"description": "Flag whether the button should styled as active.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+                },
+								{
+									"name": "disabled",
+									"description": "Flag whether the button should styled as disabled.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Button Groups",
+					"id": "button-groups",
+					"note": "Remember that <code>[button]</code> must wrap an <code>a</code>, <code>button</code>, or <code>input</code> tag inserted via the WordPress editor.",
+					"examples": [
+						{
+							"description": "Basic example",
+							"code": "[button-group]\n  [button type=\"secondary\"] [active]<a href=\"#link\">Text</a>[/active] [/button]\n  [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n  [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n[/button-group]"
+						},
+						{
+							"note": "Set the <code>vertical</code> flag to make the buttons appear vertically stacked rather than horiztonally.",
+							"description": "Vertical example",
+							"code": "[button-group vertical]\n  [button type=\"secondary\"] [active]<a href=\"#link\">Text</a>[/active] [/button]\n  [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n  [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n[/button-group]"
+						},
+						{
+							"note": "Wrap <code>[button group]s</code> in <code>[button-toolbar]</code> to make a button toolbar.",
+							"description": "Button Toolbar",
+							"code": "[button-toolbar]\n  [button-group]\n    [button type=\"secondary\"] [active]<a href=\"#link\">Text</a>[/active] [/button]\n    [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n    [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n  [/button-group]\n  [button-group]\n    [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n    [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n    [button type=\"secondary\"] <a href=\"#link\">Text</a> [/button]\n  [/button-group]\n  [button-group]\n    [button type=\"secondary\"] [disabled]<a href=\"#link\">Text</a>[/disabled] [/button]\n  [/button-group]\n[/button-toolbar]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "button-group",
+							"parameters": [
+								{
+									"name": "size",
+									"description": "The size of the button.",
+									"required": "0",
+									"values": "sm, lg",
+									"default": ""
+								},
+								{
+									"name": "vertical",
+									"description": "Flag whether the button is vertical.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						},
+						{
+							"name": "button-toolbar",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Cards",
+					"id": "cards",
+					"note": "",
+					"examples": [
+						{
+							"description": "Basic example",
+							"code": "[card]\n  [card-body]\n    Lorem ipsum dolor sit.\n  [/card-body]\n[/card]"
+            },
+						{
+							"note": "List groups are suppored by adding the <code>flush</code> flag to the <code>[list-group]</code> shortcode.",
+							"description": "List groups",
+							"code": "[card]\n  [list-group flush]\n    <ul>\n      <li>Cras justo odio</li>\n      <li>Dapibus ac facilisis in</li>\n      <li>Vestibulum at eros</li>\n    </ul>\n  [/list-group]\n[/card]"
+            },
+						{
+							"note": "",
+							"description": "Kitchen sink",
+							"code": "[card]\n  [card-img top]\n    <img src=\"placeholder-path/placeholder-lg.png\" class=\"img-fluid\">\n  [/card-img]\n  [card-body]\n    [card-title]\n      <h5>Card Title</h5>\n   [/card-title]\n    <p>Lorm ipsum dolor sit amet.</p>\n  [/card-body]\n  [list-group flush]\n    <ul>\n      <li>Cras justo odio</li>\n      <li>Dapibus ac facilisis in</li>\n      <li>Vestibulum at eros</li>\n    </ul>\n  [/list-group]\n  [card-body]\n    <a href=\"#link\">Lorem Ipsup</a>\n    <a href=\"#link\">Dolor Sit</a>\n  [/card-body]\n[/card]"
+						},
+						{
+							"note": "Image caps are supported with the <code>[card-img]</code> shortcode and the <code>top</code> or <code>bottom</code> flag.",
+							"description": "Card with image cap",
+							"code": "[card]\n  [card-img top]\n    <img src=\"placeholder-path/placeholder-lg.png\" class=\"img-fluid\">\n  [/card-img]\n  [card-body]\n    [card-title]\n      <h5>Card Title</h5> [/card-title]\n    Lorem ipsum dolor sit.\n  [/card-body]\n[/card]"
+						},
+						{
+							"note": "Image overlay cards are supported with the <code>[card-img-overlay]</code> shortcode.",
+							"description": "Card with image overlay",
+							"code": "[card]\n  [card-img]\n    <img src=\"placeholder-path/placeholder-lg.png\" class=\"img-fluid\">\n  [/card-img]\n  [card-img-overlay]\n    [card-title]\n      <h5>Card Title</h5>\n    [/card-title]\n    Lorem ipsum dolor sit.\n  [/card-img-overlay]\n[/card]"
+						},
+						{
+							"note": "Card header and card footers are supported with the <code>[card-header]</code> and <code>[card-footer]</code> shortcodes.",
+							"description": "Card with Header and Footer",
+							"code": "[card]\n  [card-header]\n    Example Header\n  [/card-header]\n  [card-body]\n    [card-title]\n      <h5>Card Title</h5>\n    [/card-title]\n    Lorem ipsum dolor sit.\n  [/card-body]\n  [card-footer]\n    Example footer.\n  [/card-footer]\n[/card]"
+						},
+						{
+							"note": "Use card groups to render cards as a single, attached element with equal width and height columns.",
+							"description": "Card group",
+							"code": "[card-group]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Lorem ipsum dolor sit.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Cras justo odio.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Dapibus ac facilisis in.\n    [/card-body]\n  [/card]\n[/card-group]"
+						},
+						{
+							"note": "Need a set of equal width and height cards that aren’t attached to one another? Use card decks.",
+							"description": "Card deck",
+							"code": "[card-deck]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Lorem ipsum dolor sit.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Cras justo odio.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Dapibus ac facilisis in.\n    [/card-body]\n  [/card]\n[/card-deck]"
+						},
+						{
+							"note": "Cards can be organized into Masonry-like columns with just CSS by wrapping them in <code>[card-columns]</code>",
+							"description": "Card columns",
+							"code": "[card-columns]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Lorem ipsum dolor sit.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Cras justo odio.\n    [/card-body]\n  [/card]\n  [card]\n    [card-body]\n      [card-title]\n        <h5>Card Title</h5>\n      [/card-title]\n      Dapibus ac facilisis in.\n    [/card-body]\n  [/card]\n[/card-columns]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "card",
+							"parameters": ""
+						},
+						{
+							"name": "card-body",
+							"note": "Any <code>p</code> or <code>blockquote</code> tags within <code>[card-body]</code> will automatically receive <code>card-text</code> or <code>card-bodyquote</code> classes respectively",
+							"parameters": ""
+						},
+						{
+							"name": "card-title",
+							"note": "<code>[card-title]</code> should contain a heading tag (<code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, or <code>h6</code>), inserted using the WordPress editor. If a heading tag is not added <code>h4</code> will be inserted automatically",
+							"parameters": ""
+						},
+						{
+							"name": "card-subtitle",
+							"note": "<code>[card-subtitle]</code> should contain a heading tag (<code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, or <code>h6</code>), inserted using the WordPress editor. If a heading tag is not added <code>h6</code> will be inserted automatically",
+							"parameters": ""
+						},
+						{
+							"name": "card-img",
+							"note": "<code>[card-img]</code> should contain an image inserted using the WordPress editor.",
+							"parameters": [
+								{
+									"name": "top",
+									"description": "Flag whether this image cap is at the top of the card.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "bottom",
+									"description": "Flag whether this image cap is at the bottom of the card.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						},
+						{
+							"name": "card-img-overlay",
+							"parameters": ""
+						},
+						{
+							"name": "card-header",
+							"note": "<code>[card-header]</code> should contain a heading tag (<code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, or <code>h6</code>), inserted using the WordPress editor. If a heading tag is not added <code>div</code> (no heading) will be inserted automatically",
+							"parameters": ""
+						},
+						{
+							"name": "card-footer",
+							"parameters": ""
+						},
+						{
+							"name": "card-group",
+							"parameters": ""
+						},
+						{
+							"name": "card-deck",
+							"parameters": ""
+						},
+						{
+							"name": "card-columns",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Carousel",
+					"id": "carousel",
+					"note": "Remember that <code>[carousel]</code> must wrap a set of images inserted via the WordPress editor.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[carousel]\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n[/carousel]"
+            },
+						{
+							"note": "",
+							"description": "Controls",
+							"code": "[carousel controls]\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n[/carousel]"
+            },
+						{
+							"note": "",
+							"description": "With indicators",
+							"code": "[carousel controls indicators]\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n  <img src=\"placeholder-path/placeholder-lg.png\">\n[/carousel]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "carousel",
+							"parameters": [
+								{
+									"name": "controls",
+									"description": "Whether to show carousel controls.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+                },
+								{
+									"name": "indicators",
+									"description": "Whether to show position indicators.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "interval",
+									"description": "The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.",
+									"required": "0",
+									"values": "any number (in ms) or \"false\"",
+									"default": "5000"
+								},
+								{
+									"name": "pause",
+									"description": "Whether the carousel pauses on hover. If set to null, hovering over the carousel won't pause it.",
+									"required": "0",
+									"values": "hover, null",
+									"default": "hover"
+								},
+								{
+									"name": "wrap",
+									"description": "Whether the carousel should cycle continuously or have hard stops.",
+									"required": "0",
+									"values": "true, false",
+									"default": "true"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Collapse",
+					"id": "collapse",
+					"examples": [
+						{
+							"note": "Create an accordion by wrapping <code>[card]</code>s in <code>[accordion]</code>.",
+							"description": "Accordion example",
+							"code": "[accordion]\n  [card]\n    [card-header] ... [/card-header]\n    [card-body]\n      ...\n    [/card-body]\n  [/card]\n  [card]\n    [card-header] ... [/card-header]\n    [card-body]\n      ...\n    [/card-body]\n  [/card]\n[/accordion]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "accordion",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Dropdowns",
+					"id": "dropdown",
+					"note": "Remember that <code>[dropdown-menu]</code> must wrap an <code>a</code>, or <code>button</code> tags inserted via the WordPress editor.",
+					"examples": [
+						{
+							"note": "The <code>dropdown</code> flag must be used on a <code>[button]</code> shortcode for dropdowns to work.",
+							"description": "Basic example",
+							"code": "[dropdown]\n  [button dropdown]Dropdown Button[/button]\n  [dropdown-menu]\n    <a href=\"#link\">Link 1</a>\n    <a href=\"#link\">Link 2</a>\n    <a href=\"#link\">Link 3</a>\n  [/dropdown-menu]\n[/dropdown]"
+						},
+						{
+							"note": "Add a header to label sections of actions in any dropdown menu.",
+							"description": "Dropdown with header tags as labels",
+							"code": "[dropdown]\n  [button dropdown]Dropdown Button[/button]\n  [dropdown-menu]\n    <h6>Dropdown header</h6>\n    <a href=\"#link\">Link 1</a>\n    <a href=\"#link\">Link 2</a>\n    <a href=\"#link\">Link 3</a>\n  [/dropdown-menu]\n[/dropdown]"
+						},
+						{
+							"note": "Separate groups of related menu items with a <code>[dropdown-divider]</code>.",
+							"description": "Divider example",
+							"code": "[dropdown]\n  [button dropdown]Dropdown Button[/button]\n  [dropdown-menu]\n    <a href=\"#link\">Link 1</a>\n    [dropdown-divider]\n    <a href=\"#link\">Link 2</a>\n    <a href=\"#link\">Link 3</a>\n  [/dropdown-menu]\n[/dropdown]"
+            },
+						{
+							"note": "Create split button dropdowns with <code>[button-group]</code> and the <code>dropdown</code> and <code>split</code flag.",
+							"description": "Split button dropdowns",
+							"code": "[button-group]\n  [button]Button[/button]\n    [button dropdown split][/button]\n    [dropdown-menu]\n    <a href=\"#link\">Link 1</a>\n    [dropdown-divider]\n    <a href=\"#link\">Link 2</a>\n    <a href=\"#link\">Link 3</a>\n  [/dropdown-menu]\n[/button-group]"
+            },
+            {
+							"note": "Set the <code>dropup</code> or <code>dropright</code> flags to set these variations.",
+							"description": "Dropup, dropright variations",
+							"code": "[dropdown dropup]\n  [button dropdown]Dropdown Button[/button]\n  [dropdown-menu]\n    <a href=\"#link\">Link 1</a>\n    <a href=\"#link\">Link 2</a>\n    <a href=\"#link\">Link 3</a>\n  [/dropdown-menu]\n[/dropdown]"
+            }
+					],
+					"shortcodes": [
+						{
+							"name": "dropdown",
+							"note": "",
+							"parameters": [
+								{
+									"name": "dropup",
+									"description": "Set dropup variation.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+                },
+								{
+									"name": "dropright",
+									"description": "Set dropright variation.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+              ]
+            },
+						{
+							"name": "dropdown-menu",
+							"note": "",
+							"parameters": [
+								{
+									"name": "align",
+									"description": "Alignment of the dropdown menu.",
+									"required": "0",
+									"values": "right",
+									"default": ""
+								}
+							]
+						},
+						{
+							"name": "dropdown-divider",
+							"note": "",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Jumbotron",
+					"id": "jumbotron",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[jumbotron]\n  <h1> Hello, World! </h1>\n  [lead] This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. [/lead]\n[/jumbotron]"
+						},
+						{
+							"note": "Set the <code>fluid</code> flag to make a fluid jumbotron.",
+							"description": "Fluid example",
+							"code": "[jumbotron fluid]\n  <h1> Hello, World! </h1>\n  [lead] This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. [/lead]\n[/jumbotron]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "jumbotron",
+							"parameters": [
+								{
+									"name": "fluid",
+									"description": "Flag whether jumbotron should be fluid.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "List Group",
+					"id": "list-group",
+					"note": "Remember that <code>[list-group]</code> must wrap a set of links or list items inserted via the WordPress editor.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[list-group]\n  <ul>\n    <li>Cras justo odio</li>\n    <li>Dapibus ac facilisis in</li>\n    <li>Morbi leo risus</li>\n    <li>Porta ac consectetur ac</li>\n    <li>Vestibulum at eros</li>\n  </ul>\n[/list-group]"
+						},
+						{
+							"note": "Create a linked list by wrapping links",
+							"description": "Linked list",
+							"code": "[list-group]\n  <a href=\"#link1\">Cras justo odio</a>\n  [active]<a href=\"#link2\">Dapibus ac facilisis in</a>[/active]\n  <a href=\"#link3\">Morbi leo risus</a>\n  <a href=\"#link4\">Porta ac consectetur ac</a>\n  [disabled]<a href=\"#link5\">Vestibulum at eros</a>[/disabled]\n[/list-group]"
+						},
+						{
+							"note": "Wrap items in the <code>list-group-item</code> shortcode to give them contextual styles",
+							"description": "Contextual styles",
+							"code": "[list-group]\n  [list-group-item type=\"success\"]<a href=\"#link1\">Cras justo odio</a>[/list-group-item]\n  [list-group-item type=\"info\"]<a href=\"#link2\">Dapibus ac facilisis in</a>[/list-group-item]\n  [list-group-item type=\"warning\"]<a href=\"#link3\">Morbi leo risus</a>[/list-group-item]\n  [list-group-item type=\"danger\"]<a href=\"#link4\">Porta ac consectetur ac</a>[/list-group-item]\n[/list-group]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "list-group",
+							"parameters": ""
+						},
+						{
+							"name": "list-group-item",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the list-group-item.",
+									"required": "0",
+									"values": "primary, secondary, success, info, warning, danger, light, dark",
+									"default": "primary"
+								}
+							]
+						}
+					]
+        },
+				{
+					"title": "Modal",
+					"id": "modal",
+					"note": "",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[modal fade id=\"example-modal\"]\n  [modal-header]<h5>Example Header</h5>[/modal-header]\n  [modal-body]\n    Lorem ipsum dolor sit.\n  [/modal-body]\n  [modal-footer]\n    [button type=\"secondary\"] Lorem [/button]\n    [button type=\"primary\"] Ipsum [/button]\n  [/modal-footer]\n[/modal]\n\n[button data=\"toggle,modal|target,#example-modal\"] Launch Modal [/button]"
+            },
+						{
+							"note": "Use the <code>size=\"large\"</code> attribute for a larger modal",
+							"description": "Large example",
+							"code": "[modal size=\"lg\" fade id=\"example-modal-lg\"]\n  [modal-header]<h5>Example Header</h5>[/modal-header]\n  [modal-body]\n    Lorem ipsum dolor sit.\n  [/modal-body]\n  [modal-footer]\n    [button type=\"secondary\"] Lorem [/button]\n    [button type=\"primary\"] Ipsum [/button]\n  [/modal-footer]\n[/modal]\n\n[button data=\"toggle,modal|target,#example-modal-lg\"] Launch Large Modal [/button]"
+            },
+						{
+							"note": "Use the <code>size=\"small\"</code> attribute for a smaller modal",
+							"description": "Small example",
+							"code": "[modal size=\"sm\" fade id=\"example-modal-sm\"]\n  [modal-header]<h5>Example Header</h5>[/modal-header]\n  [modal-body]\n    Lorem ipsum dolor sit.\n  [/modal-body]\n  [modal-footer]\n    [button type=\"secondary\"] Lorem [/button]\n    [button type=\"primary\"] Ipsum [/button]\n  [/modal-footer]\n[/modal]\n\n[button data=\"toggle,modal|target,#example-modal-sm\"] Launch Small Modal [/button]"
+            },
+						{
+							"note": "Use the <code>centered</code> flag to vertically center the modal",
+							"description": "Vertically centered",
+							"code": "[modal fade centered id=\"centered-modal\"]\n  [modal-header]<h5>Example Header</h5>[/modal-header]\n  [modal-body]\n    Lorem ipsum dolor sit.\n  [/modal-body]\n  [modal-footer]\n    [button type=\"secondary\"] Lorem [/button]\n    [button type=\"primary\"] Ipsum [/button]\n  [/modal-footer]\n[/modal]\n\n[button data=\"toggle,modal|target,#centered-modal\"] Launch Centered Modal [/button]"
+            }
+					],
+					"shortcodes": [
+						{
+							"name": "modal",
+							"parameters": [
+								{
+									"name": "size",
+									"description": "Size of the modal (optional)",
+									"required": "0",
+									"values": "lg, sm",
+									"default": "none"
+                },
+								{
+									"name": "id",
+									"description": "ID of the modal (optional)",
+									"required": "0",
+									"values": "any text",
+									"default": "none"
+                },
+								{
+									"name": "fade",
+									"description": "Flag whether modal should use fade animation.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+                },
+								{
+									"name": "centered",
+									"description": "Flag whether modal be vertically centered.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						},
+						{
+							"name": "modal-header",
+							"parameters": ""
+            },
+						{
+							"name": "modal-body",
+							"parameters": ""
+            },
+						{
+							"name": "modal-footer",
+							"parameters": ""
+						}
+					]
+				},
+				{
+					"title": "Navs",
+					"id": "navs",
+					"note": "Remember that <code>[nav]</code> must wrap a set of links and list items inserted via the WordPress editor.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[nav]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+						},
+						{
+							"note": "Set the <code>vertical</code> flag to make a vertical nav.",
+							"description": "Vertical example",
+							"code": "[nav vertical]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+            },
+						{
+							"note": "Set the <code>fill</code> flag to force navs to the full available width.",
+							"description": "Fill example",
+							"code": "[nav fill]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+            },
+						{
+							"note": "Set the <code>justified</code> flag to force nav-items to have equal widths.",
+							"description": "Fill example",
+							"code": "[nav fill]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+						},
+						{
+							"note": "Set the <code>tabs</code> flag to make an tab-styled nav.",
+							"description": "Tabs example",
+							"code": "[nav tabs]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+						},
+						{
+							"note": "Set the <code>pills</code> flag to make an pills-styled nav.",
+							"description": "Pills example",
+							"code": "[nav pills]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+						},
+						{
+							"note": "Pills-styled navs can also be stacked with the <code>stacked</code> flag.",
+							"description": "Stacked pills example",
+							"code": "[nav pills stacked]\n  <ul>\n    <li>[active]<a href=\"#link1\">Cras justo odio</a>[/active]</li>\n    <li><a href=\"#link2\">Dapibus ac facilisis in</a></li>\n    <li><a href=\"#link3\">Morbi leo risus</a></li>\n    <li><a href=\"#link4\">Porta ac consectetur ac</a></li>\n  </ul>\n[/nav]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "nav",
+							"parameters": [
+								{
+									"name": "inline",
+									"description": "Flag whether nav should be inline.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "tabs",
+									"description": "Flag whether nav should be styled as tabs.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "pills",
+									"description": "Flag whether nav should be styled as pills.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "stacked",
+									"description": "Flag whether nav should be stacked.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Pagination",
+					"id": "pagination",
+					"note": "Remember that <code>[pagination]</code> must wrap a set of list items and links inserted via the WordPress editor.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[pagination]\n  <ul>\n    <li><a href=\"#prev\">&laquo;</a></li>\n    <li><a href=\"#link1\">1</a></li>\n    <li><a href=\"#link2\">2</a></li>\n    <li><a href=\"#link3\">3</a></li>\n    <li><a href=\"#next\">&raquo;</a></li>\n  </ul>\n[/pagination]"
+						},
+						{
+							"note": "",
+							"description": "Large example",
+							"code": "[pagination size=\"lg\"]\n  <ul>\n    <li><a href=\"#prev\">&laquo;</a></li>\n    <li><a href=\"#link1\">1</a></li>\n    <li><a href=\"#link2\">2</a></li>\n    <li><a href=\"#link3\">3</a></li>\n    <li><a href=\"#next\">&raquo;</a></li>\n  </ul>\n[/pagination]"
+						},
+						{
+							"note": "",
+							"description": "Small example",
+							"code": "[pagination size=\"sm\"]\n  <ul>\n    <li><a href=\"#prev\">&laquo;</a></li>\n    <li><a href=\"#link1\">1</a></li>\n    <li><a href=\"#link2\">2</a></li>\n    <li><a href=\"#link3\">3</a></li>\n    <li><a href=\"#next\">&raquo;</a></li>\n  </ul>\n[/pagination]"
+						},
+						{
+							"note": "",
+							"description": "Active and disabled states",
+							"code": "[pagination]\n  <ul>\n    <li><a href=\"#prev\">&laquo;</a></li>\n    <li>[active]<a href=\"#link1\">1</a>[/active]</li>\n    <li><a href=\"#link2\">2</a></li>\n    <li>[disabled]<a href=\"#link3\">3</a>[/disabled]</li>\n    <li><a href=\"#next\">&raquo;</a></li>\n  </ul>\n[/pagination]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "pagination",
+							"parameters": [
+								{
+									"name": "size",
+									"description": "Optional size of the pagination.",
+									"required": "0",
+									"values": "none, sm, lg",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Popovers",
+					"id": "popovers",
+					"note": "Wrap any element in a the <code>[popover]</code> shortcode to give it a popover. This may not work well on all elements depending on styling and other factors.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[popover title=\"Popover title\" content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\" ]<a href=\"#link1\">Cras justo odio</a>[/popover]"
+						},
+						{
+							"note": "Use the focus trigger to dismiss popovers on the next click that the user makes.",
+							"description": "Dismiss on next click",
+							"code": "[popover trigger=\"focus\" title=\"Popover title\" content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\" ]<a href=\"#link1\">Cras justo odio</a>[/popover]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "popover",
+							"parameters": [
+								{
+									"name": "title",
+									"description": "The title of the popover.",
+									"required": "0",
+									"values": "any text",
+									"default": ""
+								},
+								{
+									"name": "content",
+									"description": "The content of the popover.",
+									"required": "0",
+									"values": "any text",
+									"default": ""
+								},
+								{
+									"name": "placement",
+									"description": "Placement of the popover.",
+									"required": "0",
+									"values": "top, bottom, left, right",
+									"default": "top"
+								},
+								{
+									"name": "trigger",
+									"description": "The popover trigger (use <code>focus</code> to dismiss popover on next click).",
+									"required": "0",
+									"values": "any text",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Progress",
+					"id": "progress",
+					"note": "",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[progress type=\"primary\" value=\"50\"]"
+						},
+						{
+							"note": "Use the <code>striped</code> flag to produce a striped progress bar.",
+							"description": "Striped example",
+							"code": "[progress type=\"primary\" value=\"50\" striped]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "progress",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the progress bar.",
+									"required": "0",
+									"values": "primary, success, info, warning, danger",
+									"default": "primary"
+								},
+								{
+									"name": "striped",
+									"description": "Flag whether progress bar should be striped.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "animated",
+									"description": "Flag whether progress bar should be animated.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Tooltips",
+					"id": "tooltips",
+					"note": "Wrap any element in a the <code>[tooltip]</code> shortcode to give it a tooltip. This may not work well on all elements depending on styling and other factors.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[tooltip title=\"Tooltip text\"]<a href=\"#link1\">Cras justo odio</a>[/tooltip]"
+						},
+						{
+							"note": "Use the <code>html</code> flag to allow HTML in the tooltip",
+							"description": "HTML tooltip",
+							"code": "[tooltip title=\"<em>Tooltip</em> <u>with</u> <b>HTML</b>\" tooltip]<a href=\"#link1\">Cras justo odio</a>[/tooltip]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "tooltip",
+							"parameters": [
+								{
+									"name": "title",
+									"description": "The content of the tooltip.",
+									"required": "0",
+									"values": "any text",
+									"default": ""
+								},
+								{
+									"name": "placement",
+									"description": "Placement of the tooltip.",
+									"required": "0",
+									"values": "top, bottom, left, right",
+									"default": "top"
+								},
+								{
+									"name": "html",
+									"description": "Flag whether content should be parsed for HTML.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Utilities",
+			"items": [
+				{
+					"title": "Borders",
+					"id": "borders",
+					"note": "Use border utilities to quickly style the <code>border</code> and <code>border-radius</code> of an element. Great for images, buttons, or any other element.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[border rounded]<img src=\"placeholder-path/placeholder.png\">[/border]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "border",
+							"parameters": [
+								{
+									"name": "rounded",
+									"description": "Flag whether border style should be rounded.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "top",
+									"description": "Flag whether border style should be rounded-top.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "right",
+									"description": "Flag whether border style should be rounded-right.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "bottom",
+									"description": "Flag whether border style should be rounded-bottom.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "left",
+									"description": "Flag whether border style should be rounded-left.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								},
+								{
+									"name": "circle",
+									"description": "Flag whether border style should be a circle.",
+									"required": "0",
+									"values": "🚩 (flag)",
+									"default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Colors",
+					"id": "colors",
+					"note": "Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.",
+					"examples": [
+						{
+							"note": "",
+							"description": "Basic example",
+							"code": "[color type=\"primary\"]Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.[/color]"
+						}
+					],
+					"shortcodes": [
+						{
+							"name": "color",
+							"parameters": [
+								{
+									"name": "type",
+									"description": "The type of the color to be applied.",
+									"required": "0",
+									"values": "muted, primary, success, info, warning, danger, white",
+									"default": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
