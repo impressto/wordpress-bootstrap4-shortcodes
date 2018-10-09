@@ -285,6 +285,16 @@ class Shortcodes
 
 			"text" => false,
 
+			"mt" => false,
+			"mb" => false,
+			"ml" => false,
+			"mr" => false,
+
+			"pt" => false,
+			"pb" => false,
+			"pl" => false,
+			"pr" => false,
+
 			"class" => false,
 			"data" => false
 		), $atts);
@@ -316,6 +326,17 @@ class Shortcodes
 		$class[] = ($atts['push-xl'] || $atts['push-xl'] === "0") ? 'col-xl-push-' . $atts['push-xl'] : null;
 
 		$class[] = $atts['text'] ? 'text-' . $atts['text'] : null;
+
+		$class[] = $atts['mt'] ? 'mt-' . $atts['mt'] : null;
+		$class[] = $atts['mb'] ? 'mb-' . $atts['mb'] : null;
+		$class[] = $atts['ml'] ? 'ml-' . $atts['ml'] : null;
+		$class[] = $atts['mr'] ? 'mr-' . $atts['mr'] : null;
+
+		$class[] = $atts['pt'] ? 'pt-' . $atts['pt'] : null;
+		$class[] = $atts['pb'] ? 'pb-' . $atts['pb'] : null;
+		$class[] = $atts['pl'] ? 'pl-' . $atts['pl'] : null;
+		$class[] = $atts['pr'] ? 'pr-' . $atts['pr'] : null;
+
 
 		$return = Utilities::bs_output(
 			sprintf(
